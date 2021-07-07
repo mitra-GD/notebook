@@ -1,0 +1,162 @@
+body{
+    background-image: url("img/background002.jpg");
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+    font-family: myFont-en ;
+    font-family: myFont-pr ;
+  }
+
+
+
+  @font-face {
+    font-family: myFont-pr;
+    src: url('font/Prsion-font/parvaz/W_parvaz.TTF');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: myFont-en;
+    src: url('font/english-font/Mangostana-Font_irangfx.com/mangostana.woff');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 10px;
+  }
+
+
+
+#content {
+    margin-top: 50px;
+
+}
+
+
+.container{
+    box-sizing: border-box;
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-radius: 60px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.6);
+
+}
+
+
+.div1{
+    margin: 20px;
+    width: 40%;
+    height: 450px;
+    text-align: center;
+    float: left;
+   
+
+}
+
+.div2{
+    direction: rtl;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 100px;
+    width: 40%;
+    height: auto;
+    text-align: center;
+    float: right;
+}
+
+#note{
+    direction: rtl;
+    margin: 10px;
+    width: 90%;
+    height: 100px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    color:#be7b78;
+}
+
+#label{
+    font-size: 25px;
+}
+
+#note-list{
+    width:100%;
+    height: 380px;
+    max-height: 380px;
+    font-size: 20px;
+    overflow-x: auto;
+    overflow-y: scroll;
+   
+}
+
+li{
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+.remove-note{
+    float: left;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+}
+
+.remove-note:hover {
+    float: left;
+    cursor: pointer;
+    color: rgb(228, 0, 0);
+    font-weight: lighter;
+}
+
+
+/* اسکرول */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #e8cece;
+    border-radius: 100px;
+}
+
+/* قسمت ثابت */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0px -1px 13px #000000;
+    border-radius: 100px;
+}
+
+/* قسمت متحرک */
+::-webkit-scrollbar-thumb {
+    background: #030303;
+    border-radius: 10px;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    padding: 7px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: #000000;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0 9px #999;;
+  }
+  
+  .button:hover {
+      background-color: #3e8e41;
+      color: rgb(0, 0, 0);
+    }
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
